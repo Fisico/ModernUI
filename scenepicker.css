@@ -1,0 +1,106 @@
+.scenepicker {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.scenepicker .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.scenepicker .header .headline {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.scenepicker .header .iconbox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.scenepicker .scenecontainer {
+  margin-top: 20px;
+}
+
+.scenepicker .scenecontainer .scene {
+  background-size: cover;
+  display: inline-block;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  padding: 10px;
+  /*background: rgba(255,255,255,.09);*/
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.scenepicker .scenecontainer .scene.selected {
+  border: 2px solid #ddd;
+  background-size: cover;
+}
+
+.scenepicker .scenecontainer .scene .color {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2381ec;
+  display: inline-block;
+  margin-left: -15px;
+  border: 0.1px solid #aaa;
+  -webkit-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.scenepicker .scenecontainer .scene .color:nth-child(1) {
+  margin-left: 0;
+}
+
+.scenepicker .scenecontainer .scene .name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #eee;
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+  margin: 0 15px;
+  line-height: 30px;
+}
+
+.scenepicker .scenecontainer .scene .dynamiccontrol {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #ccc;
+  font-size: 25px;
+}
+
+@-moz-document url-prefix() {
+  .scenepicker {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+/*# sourceMappingURL=scenepicker.css.map */

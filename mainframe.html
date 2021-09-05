@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern GlassUI</title>
+    
+ 
+    
+    <link href="mainframe.css" rel="stylesheet"><!-- generated from mainframe.scss-->
+    <link href="sidebar.css" rel="stylesheet"><!-- generated from sidebar.scss-->
+    <link href="components.css" rel="stylesheet"><!-- generated from components.scss-->
+    <link href="groups.css" rel="stylesheet"><!-- generated from groups.scss-->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/fontawesome.min.css"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    
+  </head>
+  <body>
+   
+  <script src="js/script.js"></script>
+
+
+  <div id="left" class="column">
+    <div class="topbarLeft">
+      <div class="logo"><img src="images/logo.svg" alt=""></div>
+      <div class="headline">DiyHue</div>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+    <div class="sidebar"><!-- outsource in different sidebar.js-->
+      <ul>
+        <a href="#home">
+          <li><i class="fas fa-home" style="color: #0092FF"></i>Home</li>
+        </a>
+        <a href="#bridge">
+          <li><i class="fas fa-cube" style="color: #FF9E00"></i>Bridge</li>
+        </a>
+        <a href="#devices">
+          <li><i class="fas fa-braille" style="color: #764600"></i>Devices</li>
+        </a>
+        <a href="#deconz">
+          <li><i class="fab fa-dyalog" style="color: #42A138"></i>Deconz</li>
+        </a>
+        <a href="#MQTT">
+          <li><i class="fas fa-cube" style="color: #0084FF"></i>MQTT</li>
+        </a>
+        <a href="#alerts">
+          <li><i class="fas fa-exclamation-triangle" style="color: #AE2D00"></i>Alerts</li>
+        </a>
+        <a href="#settings">
+          <li><i class="fas fa-cog" style="color: #8B00FF"></i>Settings</li>
+        </a>
+        <a href="#logout">
+          <li><i class="fas fa-sign-out-alt" style="color: #fff"></i>Logout</li>
+        </a>
+      </ul>
+    </div><!-- end outsource in different sidebar.js-->
+</div>
+<div id="right" class="column">
+    <div class="topbarRight">
+      <div class="onbtn">
+        <p>All lights on/off</p>
+        <div class="switchContainer"><label class="switch"><input type="checkbox" value="true" checked=""><span class="slider"></span></label></div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inner">
+      <div class="groupcontainer"><!-- outsource in different groups.js-->
+        <div class="groupCard"><!-- start group-->
+          <div class="row top">
+            <div class="gradient"><i class="fas fa-home"></i></div>
+            <div class="text"><p class="name">Studio</p><p class="subtext">5 lamps online</p></div>
+            <div class="switchContainer"><label class="switch"><input type="checkbox" value="true" checked=""><span class="slider"></span></label></div>
+          </div>
+          <div class="row background"><div class="sliderContainer"><input type="range" min="1" max="254" step="1" class="slider" value="100"></div></div>
+          <div class="row bottom"><div class="expandbtn"><i class="fas fa-chevron-down"></i></div></div>
+        </div><!-- start end group-->
+        <div class="groupCard">
+          <div class="row top">
+            <div class="gradient"><i class="fas fa-home"></i></div>
+            <div class="text"><p class="name">Studio</p><p class="subtext">5 lamps online</p></div>
+            <div class="switchContainer"><label class="switch"><input type="checkbox" value="true" checked=""><span class="slider"></span></label></div>
+          </div>
+          <div class="row background"><div class="sliderContainer"><input type="range" min="1" max="254" step="1" class="slider" value="100"></div></div>
+          <div class="row"><div class="colorWheel"></div></div>
+          <div class="row bottom">
+            <div class="scenebtn"><i class="fas fa-images"></i></div>
+            <div class="expandbtn">
+              <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="lightbtn"><i class="far fa-lightbulb"></i></div>
+          </div>
+        </div>
+        
+        <div class="groupCard"></div>
+        <div class="groupCard"></div>
+        <div class="groupCard"></div>
+        <div class="groupCard"></div>
+        <div class="groupCard"></div>
+        <div class="groupCard"></div>
+      </div><!-- end outsource in different groups.js-->
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
