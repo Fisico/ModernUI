@@ -1,0 +1,66 @@
+.notificationContainer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1000;
+}
+
+.notificationContainer .notification {
+  position: relative;
+  height: 75px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  line-height: 75px;
+}
+
+.notificationContainer .notification p {
+  margin-left: 25px;
+  margin-right: 75px;
+}
+
+.notificationContainer .notification .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 75px;
+}
+
+.notificationContainer .notification .icon:hover svg,
+.notificationContainer .notification .icon:active svg {
+  fill: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.notificationContainer .notification svg {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  fill: rgba(255, 255, 255, 0.5);
+  width: 25px;
+  height: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.notificationContainer .notification.success {
+  background: linear-gradient(160deg, #a1ee59, #59ee80);
+  -webkit-box-shadow: 2px 2px 15px 2px rgba(50, 92, 10, 0.2), 2px 2px 15px 2px rgba(10, 92, 32, 0.2);
+          box-shadow: 2px 2px 15px 2px rgba(50, 92, 10, 0.2), 2px 2px 15px 2px rgba(10, 92, 32, 0.2);
+}
+
+.notificationContainer .notification.warning {
+  background: linear-gradient(130deg, #eecb59, #f1ee49);
+  -webkit-box-shadow: 2px 2px 15px 2px rgba(203, 161, 21, 0.2), 2px 2px 15px 2px rgba(199, 196, 15, 0.2);
+          box-shadow: 2px 2px 15px 2px rgba(203, 161, 21, 0.2), 2px 2px 15px 2px rgba(199, 196, 15, 0.2);
+}
+
+.notificationContainer .notification.error {
+  background: linear-gradient(170deg, #ee7759, #ee5b59);
+  -webkit-box-shadow: 2px 2px 15px 2px rgba(203, 24, 21, 0.2), 2px 2px 15px 2px rgba(203, 33, 21, 0.2);
+          box-shadow: 2px 2px 15px 2px rgba(203, 24, 21, 0.2), 2px 2px 15px 2px rgba(203, 33, 21, 0.2);
+}
+/*# sourceMappingURL=notification.css.map */

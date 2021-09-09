@@ -12,7 +12,8 @@
     <link href="mainframe.css" rel="stylesheet"><!-- generated from mainframe.scss-->
     <link href="sidebar.css" rel="stylesheet"><!-- generated from sidebar.scss-->
     <link href="components.css" rel="stylesheet"><!-- generated from components.scss-->
-    <link href="groups.css" rel="stylesheet"><!-- generated from groups.scss-->
+    <link href="content.css" rel="stylesheet"><!-- generated from content.scss-->
+    <link href="forms.css" rel="stylesheet"><!-- generated from forms.scss-->
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
@@ -71,34 +72,25 @@
     </div>
     <div class="content">
       <div class="inner">
-      <div class="groupcontainer"><!-- outsource in different groups.js-->
-        <div class="groupCard"><!-- start group-->
-          <div class="row top">
-            <div class="gradient"><i class="fas fa-home"></i></div>
-            <div class="text"><p class="name">Studio</p><p class="subtext">5 lamps online</p></div>
-            <div class="switchContainer"><label class="switch"><input type="checkbox" value="true" checked=""><span class="slider"></span></label></div>
-          </div>
-          <div class="row background"><div class="sliderContainer"><input type="range" min="1" max="254" step="1" class="slider" value="100"></div></div>
-          <div class="row bottom"><div class="expandbtn"><i class="fas fa-chevron-down"></i></div></div>
-        </div><!-- start end group-->
-        <div class="groupCard">
-          <div class="row top">
-            <div class="gradient"><i class="fas fa-home"></i></div>
-            <div class="text"><p class="name">Studio</p><p class="subtext">5 lamps online</p></div>
-            <div class="switchContainer"><label class="switch"><input type="checkbox" value="true" checked=""><span class="slider"></span></label></div>
-          </div>
-          <div class="row background"><div class="sliderContainer"><input type="range" min="1" max="254" step="1" class="slider" value="100"></div></div>
-          <div class="row"><div class="colorWheel"></div></div>
-          <div class="row bottom">
-            <div class="scenebtn"><i class="fas fa-images"></i></div>
-            <div class="expandbtn">
-              <i class="fas fa-chevron-up"></i>
-            </div>
-            <div class="lightbtn"><i class="far fa-lightbulb"></i></div>
-          </div>
+        <div class="contentContainer">
+          <div class="headline">Deconz Config</div>
+          <form class="add-form">
+            <div class="switchContainer">
+              <label class="switch">
+                <input type="checkbox" value="false"><span class="slider"></span>
+              </label></div><div class="form-control"><label>Deconz host</label>
+                <input type="text" placeholder="Deconz host" value="127.0.0.1"></div>
+                <div class="form-control"><label>Deconz port</label>
+                  <input type="number" placeholder="Deconz port" value="8443"></div>
+                  <div class="form-control"><label>Deconz User</label>
+                    <input type="text" placeholder="Automatically populated" readonly="" value=""></div>
+                    <div class="form-control">
+                      <input type="submit" class="btn btn-block" value="Pair"></div>
+                    </form>
         </div>
-        
-      </div><!-- end outsource in different groups.js-->
+
+
+
     </div>
     </div>
 </div>
