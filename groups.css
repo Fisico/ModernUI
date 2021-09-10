@@ -11,6 +11,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.groupCard.light {
+  width: 100%;
+}
+
 .groupCard .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +63,11 @@
   color: #fff;
   font-size: 25px;
   line-height: 50px;
+}
+
+.groupCard .row .lights {
+  width: 100%;
+  padding: 20px;
 }
 
 .groupCard .row .text {
